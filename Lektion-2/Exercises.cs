@@ -7,9 +7,112 @@ namespace Lektion_2
 {
     class Exercises
     {
-        //public static void Run()
-        //{
-        //}
+        public static int Count = 7;
+
+        public static void Exercise1()
+        {
+            Console.WriteLine("--- Exercise 1");
+            int expression1 = 5 + 2;
+            int expression2 = 5 + 2 * 7;
+            double expression3 = (10 + 2) / 3;
+            double expression4 = (3 * 8) / (4 * 2);
+
+            Console.WriteLine(expression1);
+            Console.WriteLine(expression2);
+            Console.WriteLine(expression3);
+            Console.WriteLine(expression4);
+
+            Console.WriteLine(Environment.NewLine);
+        }
+
+        public static void Exercise2()
+        {
+            Console.WriteLine("--- Exercise 2");
+
+            double cash;
+            double bank;
+
+            /* Read, parse and validate user input. */
+
+            while (true)
+            {
+                Console.Write("Cash ($):");
+                string s_cash = Console.ReadLine();
+
+                if (double.TryParse(s_cash, out cash))
+                {
+                    break;
+                }
+            }
+
+            while (true)
+            {
+                Console.Write("Bank ($):");
+                string s_bank = Console.ReadLine();
+
+                if (double.TryParse(s_bank, out bank))
+                {
+                    break;
+                }
+            }
+
+            /* Calculate total amount and print it */
+
+            double total = cash + bank;
+            if (total == 0)
+            {
+                Console.WriteLine($"You're broke.");
+            }
+            else
+            {
+                Console.WriteLine($"You have a total of ${total}.");
+            }
+
+            Console.WriteLine(Environment.NewLine);
+        }
+        public static void Exercise3()
+        {
+            Console.WriteLine("--- Exercise 3");
+
+            double fahrenheit;
+            double v3_celsius;
+
+            /* Read, parse and validate user input. */
+
+            while (true)
+            {
+                Console.Write("Fahrenheit:");
+                string s_fahrenheit = Console.ReadLine();
+
+                if (double.TryParse(s_fahrenheit, out fahrenheit))
+                {
+                    break;
+                }
+            }
+
+            /* Calculate total amount and print it */
+
+            double celsius_variant1 = (fahrenheit - 32) * 0.556;
+            double celsius_variant2_step1 = fahrenheit - 32;
+            double celsius_variant2 = celsius_variant2_step1 * 0.556;
+            Console.WriteLine($"(Variant 1) {fahrenheit} Fahrenheit = {celsius_variant1} Celsius.");
+            Console.WriteLine($"(Variant 2) {fahrenheit} Fahrenheit = {celsius_variant2} Celsius.");
+
+            /* Read, parse and validate user input. */
+
+            while (true)
+            {
+                Console.Write("Fahrenheit:");
+                string v3_s_celsius = Console.ReadLine();
+
+                if (double.TryParse(v3_s_celsius, out v3_celsius))
+                {
+                    break;
+                }
+            }
+
+            Console.WriteLine(Environment.NewLine);
+        }
 
         public static void Exercise4()
         {
@@ -18,18 +121,18 @@ namespace Lektion_2
             /* Get numbers */
 
             Console.WriteLine("Enter the first number:");
-            double number1 = InputValidator.getInput_double();
+            double number1 = InputParser.parseString_intoDouble();
             numbers.Add(number1);
 
             Console.WriteLine("Enter the second number:");
-            double number2 = InputValidator.getInput_double();
+            double number2 = InputParser.parseString_intoDouble();
             numbers.Add(number2);
 
             Console.WriteLine("Enter the third number:");
-            double number3 = InputValidator.getInput_double();
+            double number3 = InputParser.parseString_intoDouble();
             numbers.Add(number3);
 
-            /* Find the smallest and largest number(s?). */
+            /* Find the smallest and largest numbers. */
 
             double largestNumber_variant1 = Math.Max(Math.Max(number1, number2), number3);
             Console.WriteLine("The largest number is: " + largestNumber_variant1);
@@ -72,9 +175,9 @@ namespace Lektion_2
         public static void Exercise6()
         {
             Console.WriteLine("How many children?");
-            int children = int.Parse(Console.ReadLine());
+            int children = InputParser.parseString_intoInt();
             Console.WriteLine("How many pieces of candy?");
-            int candy = int.Parse(Console.ReadLine());
+            int candy = InputParser.parseString_intoInt();
 
             double candyPerChild = (double)candy / children;
             //Console.WriteLine(candyPerChild + " pieces of candy per child, and " + candy % children + " pieces for me.");
@@ -84,7 +187,7 @@ namespace Lektion_2
         public static void Exercise7()
         {
             Console.WriteLine("How many seconds?");
-            int seconds = int.Parse(Console.ReadLine());
+            int seconds = InputParser.parseString_intoInt();
             int hours = seconds / 3600;
             seconds = seconds % 3600;
             int minutes = seconds / 60;
