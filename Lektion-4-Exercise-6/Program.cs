@@ -28,7 +28,7 @@ namespace Lektion_4_Exercise_6
         }
 
         public static void Run_variant1()
-        {;
+        {
             //int dice1_sides = 6;
             //int dice2_sides = 6;
             //var d1 = new { min = (int)1, max = (int)6 };
