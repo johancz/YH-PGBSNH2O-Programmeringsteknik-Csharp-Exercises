@@ -17,12 +17,10 @@ namespace Lektion_2
             double expression3 = (10 + 2) / 3;
             double expression4 = (3 * 8) / (4 * 2);
 
-            Console.WriteLine(expression1);
-            Console.WriteLine(expression2);
-            Console.WriteLine(expression3);
-            Console.WriteLine(expression4);
+            Console.WriteLine(expression1 + ", " + expression2 + ", " + expression3 + ", " + expression4);
 
             Console.WriteLine(Environment.NewLine);
+            //Console.WriteLine("--- Exercise 1 [END]");
         }
 
         public static void Exercise2()
@@ -33,26 +31,33 @@ namespace Lektion_2
             double bank;
 
             /* Read, parse and validate user input. */
-
-            while (true)
             {
-                Console.Write("Cash ($):");
-                string s_cash = Console.ReadLine();
+                bool retry = false;
 
-                if (double.TryParse(s_cash, out cash))
+                while (true)
                 {
-                    break;
+
+                    Console.Write(retry ? "Try again! - Cash ($):" : "Cash($):");
+                    string s_cash = Console.ReadLine();
+
+                    if (double.TryParse(s_cash, out cash))
+                    {
+                        retry = false;
+                        break;
+                    }
+
+                    retry = true;
                 }
-            }
 
-            while (true)
-            {
-                Console.Write("Bank ($):");
-                string s_bank = Console.ReadLine();
-
-                if (double.TryParse(s_bank, out bank))
+                while (true)
                 {
-                    break;
+                    Console.Write("Bank ($):");
+                    string s_bank = Console.ReadLine();
+
+                    if (double.TryParse(s_bank, out bank))
+                    {
+                        break;
+                    }
                 }
             }
 
