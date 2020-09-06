@@ -27,15 +27,17 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Lektion-4-Exercise-1", "Lek
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Lektion-2-temp", "Lektion-2-temp", "{2D683908-900C-4848-AF70-0CD829FC8EA3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lektion-4-Exercise-2", "Lektion-4-Exercise-2\Lektion-4-Exercise-2.csproj", "{086C87EE-096B-429C-865B-C2D230DF06B0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Lektion-4-Exercise-2", "Lektion-4-Exercise-2\Lektion-4-Exercise-2.csproj", "{086C87EE-096B-429C-865B-C2D230DF06B0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lektion-4-Exercise-3", "Lektion-4-Exercise-3\Lektion-4-Exercise-3.csproj", "{4DA1EC42-C485-43FB-9EEB-6C3539F70DCC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Lektion-4-Exercise-3", "Lektion-4-Exercise-3\Lektion-4-Exercise-3.csproj", "{4DA1EC42-C485-43FB-9EEB-6C3539F70DCC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lektion-4-Exercise-4", "Lektion-4-Exercise-4\Lektion-4-Exercise-4.csproj", "{C5E9B4FF-D2C2-4A65-A1F9-C8F7EAACD8F1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Lektion-4-Exercise-4", "Lektion-4-Exercise-4\Lektion-4-Exercise-4.csproj", "{C5E9B4FF-D2C2-4A65-A1F9-C8F7EAACD8F1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lektion-4-Exercise-5", "Lektion-4-Exercise-5\Lektion-4-Exercise-5.csproj", "{CFE7D2B8-DA14-47DB-90BA-FE04B214849C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Lektion-4-Exercise-5", "Lektion-4-Exercise-5\Lektion-4-Exercise-5.csproj", "{CFE7D2B8-DA14-47DB-90BA-FE04B214849C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lektion-4-Exercise-6", "Lektion-4-Exercise-6\Lektion-4-Exercise-6.csproj", "{ECE618B5-EEB8-4C53-A7FD-78F0EF743CED}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Lektion-4-Exercise-6", "Lektion-4-Exercise-6\Lektion-4-Exercise-6.csproj", "{ECE618B5-EEB8-4C53-A7FD-78F0EF743CED}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lektion-4-Exercise-7", "Lektion-4-Exercise-7\Lektion-4-Exercise-7.csproj", "{980D95BD-687B-4E74-A598-2FA9BE598E90}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -99,6 +101,10 @@ Global
 		{ECE618B5-EEB8-4C53-A7FD-78F0EF743CED}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{ECE618B5-EEB8-4C53-A7FD-78F0EF743CED}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{ECE618B5-EEB8-4C53-A7FD-78F0EF743CED}.Release|Any CPU.Build.0 = Release|Any CPU
+		{980D95BD-687B-4E74-A598-2FA9BE598E90}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{980D95BD-687B-4E74-A598-2FA9BE598E90}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{980D95BD-687B-4E74-A598-2FA9BE598E90}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{980D95BD-687B-4E74-A598-2FA9BE598E90}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -118,6 +124,7 @@ Global
 		{C5E9B4FF-D2C2-4A65-A1F9-C8F7EAACD8F1} = {C180DB4D-F03F-4408-859E-B55A333F8453}
 		{CFE7D2B8-DA14-47DB-90BA-FE04B214849C} = {C180DB4D-F03F-4408-859E-B55A333F8453}
 		{ECE618B5-EEB8-4C53-A7FD-78F0EF743CED} = {C180DB4D-F03F-4408-859E-B55A333F8453}
+		{980D95BD-687B-4E74-A598-2FA9BE598E90} = {C180DB4D-F03F-4408-859E-B55A333F8453}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {7E24C14F-6B05-446D-AC6A-CD36EDE2D939}
