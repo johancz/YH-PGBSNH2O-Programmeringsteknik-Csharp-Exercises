@@ -36,7 +36,7 @@ namespace Lektion_4_Exercise_2
         {
             using FakeConsole console = new FakeConsole("5");
             Program.Main();
-            Assert.AreEqual("product of '5' is: 120", console.Output);
+            Assert.AreEqual("The product of '5' is: 120", console.Output);
         }
     }
 }

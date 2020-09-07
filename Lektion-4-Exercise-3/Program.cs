@@ -4,6 +4,8 @@ using Microsoft.VisualStudio.TestTools.UnitTesting;
 
 namespace Lektion_4_Exercise_3
 {
+    // Write a program that reads an integer from the user and sums all even numbers up to that integer. For example, entering the number 10 should result in the output 30, because the sum of 2, 4, 6, 8, and 10 is 30.
+
     public class Program
     {
         public static void Main()
@@ -11,6 +13,7 @@ namespace Lektion_4_Exercise_3
             // We need this to make sure we can always use periods for decimal points.
             CultureInfo.CurrentCulture = CultureInfo.InvariantCulture;
 
+            Console.Write("Enter a number: ");
             if (int.TryParse(Console.ReadLine(), out int i))
             {
                 int sum_v1 = 0, sum_v2 = 0;
@@ -58,7 +61,7 @@ namespace Lektion_4_Exercise_3
             /* Variant 1 */
             Assert.AreEqual("The sum of all even numbers up to '10' is: 30", console.Lines[0]);
             /* Variant 2 */
-            Assert.AreEqual("The sum of all odd numbers up to '10' is: 25", console.Lines[0]);
+            Assert.AreEqual("The sum of all odd numbers up to '10' is: 25", console.Lines[1]);
         }
     }
 }

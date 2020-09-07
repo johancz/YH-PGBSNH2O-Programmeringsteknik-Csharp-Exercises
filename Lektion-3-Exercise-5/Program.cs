@@ -8,6 +8,9 @@ namespace Lektion_3_Exercise_5
     {
         public static void Main()
         {
+            // We need this to make sure we can always use periods for decimal points.
+            CultureInfo.CurrentCulture = CultureInfo.InvariantCulture;
+
             // Exercise (Determine by hand (without a computer) the values of the following boolean expressions:)
             // 1. false || true                         == true
             // 2. false || false || true                == true
@@ -30,10 +33,6 @@ namespace Lektion_3_Exercise_5
             Console.WriteLine("!(true || false) == " + (!(true || false)));
             Console.WriteLine("!(true || false) && !false == " + (!(true || false) && !false));
             Console.WriteLine("!(!(true && false)) == " + (!(!(true && false))));
-
-
-            // We need this to make sure we can always use periods for decimal points.
-            CultureInfo.CurrentCulture = CultureInfo.InvariantCulture;
         }
     }
 
@@ -41,11 +40,22 @@ namespace Lektion_3_Exercise_5
     public class ProgramTests
     {
         [TestMethod]
-        public void ExampleTest()
+        public void TestOutput()
         {
             using FakeConsole console = new FakeConsole("First input", "Second input");
             Program.Main();
-            Assert.AreEqual("Hello!", console.Output);
+            CollectionAssert.AreEqual(new[] {
+                "false || true == True",
+                "false || false || true == True",
+                "true && false == False",
+                "true && true && false == False",
+                "(true && false) || (true || false) == True",
+                "!true || !false == True",
+                "!true && !false == False",
+                "!(true || false) == False",
+                "!(true || false) && !false == False",
+                "!(!(true && false)) == False"
+                }, console.Lines);
         }
     }
 }
