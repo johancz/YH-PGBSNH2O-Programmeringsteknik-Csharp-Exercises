@@ -63,5 +63,17 @@ namespace Lektion_4_Exercise_3
             /* Variant 2 */
             Assert.AreEqual("The sum of all odd numbers up to '10' is: 25", console.Lines[1]);
         }
+
+        // TODO(johancz): test negative numbers.
+        [TestMethod]
+        public void Test_negativeNumber()
+        {
+            throw new NotImplementedException();
+            using FakeConsole console = new FakeConsole("-10");
+            /* Variant 1 */
+            Assert.AreEqual("The sum of all even numbers up to '10' is: 30", console.Lines[0]);
+            /* Variant 2 */
+            Assert.AreEqual("The sum of all odd numbers up to '10' is: 25", console.Lines[1]);
+        }
     }
 }

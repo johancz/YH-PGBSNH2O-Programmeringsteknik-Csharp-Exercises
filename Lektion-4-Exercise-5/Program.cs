@@ -11,7 +11,7 @@ namespace Lektion_4_Exercise_5
             // We need this to make sure we can always use periods for decimal points.
             CultureInfo.CurrentCulture = CultureInfo.InvariantCulture;
 
-            for (int i = 1; i < 100; ++i)
+            for (int i = 1; i <= 100; ++i)
             {
                 string output = "";
 
@@ -136,7 +136,8 @@ namespace Lektion_4_Exercise_5
                 "Fizz",
                 "97",
                 "98",
-                "Fizz"
+                "Fizz",
+                "Buzz"
             }, console.Lines);
         }
     }
