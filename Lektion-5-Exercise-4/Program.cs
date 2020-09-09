@@ -13,7 +13,7 @@ namespace Lektion_5_Exercise_4
             // We need this to make sure we can always use periods for decimal points.
             CultureInfo.CurrentCulture = CultureInfo.InvariantCulture;
 
-            string swedishVowels = "aeiouy���";
+            string swedishVowels = "aeiouyåäö";
 
             Console.Write("Input a string into the lowercase swedish vowels destroyer: ");
             string input = Console.ReadLine(),
@@ -38,7 +38,7 @@ namespace Lektion_5_Exercise_4
                 }
             }
 
-            Console.WriteLine($"Original text: \"{input}\"\nall vowels removed: \"{output}\".");
+            Console.WriteLine($"Original text: \"{input}\"\nlowercase swedish vowels: \"{output}\".");
 
             output = "";
 
@@ -46,7 +46,7 @@ namespace Lektion_5_Exercise_4
             {
                 char c = input[i];
 
-                if (c == 'a' || c == 'e' || c == 'i' || c == 'o' || c == 'u' || c == 'y' || c == '�' || c == '�' || c == '�')
+                if (c == 'a' || c == 'e' || c == 'i' || c == 'o' || c == 'u' || c == 'y' || c == 'å' || c == 'ä' || c == 'ö')
                 {
                     continue;
                 }
@@ -54,7 +54,7 @@ namespace Lektion_5_Exercise_4
                 output += input[i];
             }
 
-            Console.WriteLine($"Original text: \"{input}\"\nall vowels removed: \"{output}\".");
+            Console.WriteLine($"Original text: \"{input}\"\nlowercase swedish vowels: \"{output}\".");
         }
     }
 
@@ -64,17 +64,14 @@ namespace Lektion_5_Exercise_4
         [TestMethod]
         public void Test()
         {
-            using FakeConsole console = new FakeConsole();
+            using FakeConsole console = new FakeConsole("_åäöaieouyÄÖÅIOUYAE_");
             Program.Main();
-            Assert.AreEqual("\"keyboard\" reversed = \"draobyek\".", console.Output);
-        }
-
-        [TestMethod]
-        public void Test2()
-        {
-            using FakeConsole console = new FakeConsole();
-            Program.Main();
-            Assert.AreEqual("\"keyboard\" reversed = \"draobyek\".", console.Output);
+            CollectionAssert.AreEqual(new[] {
+                "Original text: \"_åäöaieouyÄÖÅIOUYAE_\"\n" +
+                "lowercase swedish vowels: \"_ÄÖÅIOUYAE_\".",
+                "Original text: \"_åäöaieouyÄÖÅIOUYAE_\"\n" +
+                "lowercase swedish vowels: \"_ÄÖÅIOUYAE_\"."
+            }, console.Lines);
         }
     }
 }
