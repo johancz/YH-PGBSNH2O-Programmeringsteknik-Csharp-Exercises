@@ -12,20 +12,7 @@ namespace Lektion_5_Exercise_5
             // We need this to make sure we can always use periods for decimal points.
             CultureInfo.CurrentCulture = CultureInfo.InvariantCulture;
 
-            Console.Write("Input some text: ");
-            //string input = Console.ReadLine();
-            Console.ReadLine(); string input = "happy birthday HAPPY BIRTHDAY";
-            int count_aA = 0;
 
-            foreach (char c in input)
-            {
-                if (c == 'a' || c == 'A')
-                {
-                    count_aA++;
-                }
-            }
-
-            Console.WriteLine($"aA count: {count_aA}.");
         }
     }
 
@@ -35,9 +22,9 @@ namespace Lektion_5_Exercise_5
         [TestMethod]
         public void ExampleTest()
         {
-            using FakeConsole console = new FakeConsole("happy birthday HAPPY BIRTHDAY");
+            using FakeConsole console = new FakeConsole();
             Program.Main();
-            Assert.AreEqual("aA count: 4.", console.Output);
+            Assert.AreEqual("", console.Output);
         }
     }
 }
