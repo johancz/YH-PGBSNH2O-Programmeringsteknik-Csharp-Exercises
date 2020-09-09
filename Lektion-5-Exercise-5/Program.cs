@@ -12,7 +12,17 @@ namespace Lektion_5_Exercise_5
             // We need this to make sure we can always use periods for decimal points.
             CultureInfo.CurrentCulture = CultureInfo.InvariantCulture;
 
+            Console.Write("Input some text: ");
+            string input = Console.ReadLine(); input = input.Length == 0 ? "happy birthday  HAPPY BIRTHDAY" : input;
+            string output = "";
 
+            //foreach (char c in input)
+            for (int i = 0; i < input.Length; i++)
+            {
+                output += (i % 2 == 0) ? input[i] : '*';
+            }
+
+            Console.WriteLine(output);
         }
     }
 
@@ -22,9 +32,9 @@ namespace Lektion_5_Exercise_5
         [TestMethod]
         public void ExampleTest()
         {
-            using FakeConsole console = new FakeConsole();
+            using FakeConsole console = new FakeConsole("computer");
             Program.Main();
-            Assert.AreEqual("", console.Output);
+            Assert.AreEqual("c*m*u*e*", console.Output);
         }
     }
 }
