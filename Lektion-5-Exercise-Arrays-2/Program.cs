@@ -1,5 +1,7 @@
 using System;
+using System.ComponentModel;
 using System.Globalization;
+using System.Linq;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
 namespace Lektion_5_Exercise_Arrays_2
@@ -12,37 +14,40 @@ namespace Lektion_5_Exercise_Arrays_2
             // We need this to make sure we can always use periods for decimal points.
             CultureInfo.CurrentCulture = CultureInfo.InvariantCulture;
 
-            int size;
-            Console.Write("How many integers do you want? ");
-            while (!int.TryParse(Console.ReadLine(), out size))
+            Console.Write("Enter a string of numbers separated with commas: ");
+            string input = Console.ReadLine();
+            int[] _numbers = new int[input.Length];
+            int index = 0;
+
+            string _stringnumber = "";
+            for (int i = 0, len = input.Length; i < len; i++)
             {
-                Console.WriteLine("That's not an integer, try again:");
-                Console.Write("How many integers do you want? ");
-            }
+                char c = input[i];
 
-            int[] numbers = new int[size];
-
-            Console.WriteLine($"Enter {size} integers below:");
-
-            for (int i = 0; i < size; i++)
-            {
-                Console.Write($"Integer {i + 1}: ");
-                while (!int.TryParse(Console.ReadLine(), out numbers[i]))
+                //if (c >= 48 && c <= 57)
+                if (c - '0' >= 0 && c - '0' <= 9)
                 {
-                    Console.WriteLine("That's not an integer, try again:");
-                    Console.Write($"Integer {i + 1}: ");
+                    _stringnumber += c;
+                }
+
+                if (c == ',' || i + 1 == len)
+                {
+                    int.TryParse(_stringnumber, out _numbers[index++]);
+                    _stringnumber = "";
                 }
             }
 
-            Console.WriteLine("I doubled the numbers for you:");
-            for (int i = 0; i < size; i++)
+            int[] numbers = new int[index];
+            int[] numbersMultiplied = new int[index];
+            for (int i = 0; i < index; i++)
             {
-                numbers[i] *= 2;
+                numbersMultiplied[i] = numbers[i] = _numbers[i];
+                numbersMultiplied[i] *= 2;
             }
 
-            foreach (int n in numbers)
+            for (int i = 0; i < index; i++)
             {
-                Console.WriteLine(n);
+                Console.WriteLine($"{numbers[i]} * 2 = {numbersMultiplied[i]}");
             }
         }
     }
@@ -53,9 +58,29 @@ namespace Lektion_5_Exercise_Arrays_2
         [TestMethod]
         public void ExampleTest()
         {
-            using FakeConsole console = new FakeConsole("First input", "Second input");
+            using FakeConsole console = new FakeConsole("3,3004,35,500,40");
             Program.Main();
-            Assert.AreEqual("Hello!", console.Output);
+            CollectionAssert.AreEqual(new[] {
+            "3 * 2 = 6",
+            "3004 * 2 = 6008",
+            "35 * 2 = 70",
+            "500 * 2 = 1000",
+            "40 * 2 = 80"
+            }, console.Lines);
+        }
+
+        [TestMethod]
+        public void ExampleTest2()
+        {
+            using FakeConsole console = new FakeConsole("FF3,30f04,35x0%,5$00,-40");
+            Program.Main();
+            CollectionAssert.AreEqual(new[] {
+            "3 * 2 = 6",
+            "3004 * 2 = 6008",
+            "350 * 2 = 700",
+            "500 * 2 = 1000",
+            "40 * 2 = 80"
+            }, console.Lines);
         }
     }
 }
