@@ -2,7 +2,7 @@
 
   <PropertyGroup>
     <TargetFramework>netcoreapp3.1</TargetFramework>
-    <RootNamespace>Added_Lektion_5_Exercise_Arrays_3</RootNamespace>
+    <RootNamespace>Lektion_5_Exercise_Arrays_3</RootNamespace>
     <IsPackable>false</IsPackable>
     <GenerateProgramFile>false</GenerateProgramFile>
   </PropertyGroup>

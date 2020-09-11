@@ -75,9 +75,9 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "eBook", "eBook", "{B9D48644
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Paper Book", "Paper Book", "{60DE8E66-C94D-436D-AB7F-D6B7B53F96E7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lektion-5-Exercise-Arrays-2", "Lektion-5-Exercise-Arrays-2\Lektion-5-Exercise-Arrays-2.csproj", "{93039F53-11B1-40C8-97A0-4A91ECB70998}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Lektion-5-Exercise-Arrays-2", "Lektion-5-Exercise-Arrays-2\Lektion-5-Exercise-Arrays-2.csproj", "{93039F53-11B1-40C8-97A0-4A91ECB70998}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Added Lektion-5-Exercise-Arrays-3", "Added Lektion-5-Exercise-Arrays-3\Added Lektion-5-Exercise-Arrays-3.csproj", "{3FF71BC6-0A59-449F-B5AD-BCD01454F4EA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Lektion-5-Exercise-Arrays-3", "Lektion-5-Exercise-Arrays-3\Lektion-5-Exercise-Arrays-3.csproj", "{3FF71BC6-0A59-449F-B5AD-BCD01454F4EA}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
