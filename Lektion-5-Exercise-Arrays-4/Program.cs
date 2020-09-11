@@ -3,7 +3,7 @@ using System.Globalization;
 using System.Linq;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
-namespace Lektion_5_Exercise_Arrays_3
+namespace Lektion_5_Exercise_Arrays_4
 {
     public class Program
     {
@@ -36,9 +36,16 @@ namespace Lektion_5_Exercise_Arrays_3
             }
 
             // Replace every other integer 0
-            for (int i = 0; i < size; i += 2)
+            for (int i = 0; i < size; i++)
             {
-                numbers[i] = 0;
+                if (numbers[i] > 10)
+                {
+                    numbers[i] = 10;
+                }
+                else if (numbers[i] < 0)
+                {
+                    numbers[i] = 0;
+                }
             }
 
             Console.WriteLine();

@@ -4,7 +4,7 @@ using System.IO;
 using System.Linq;
 using System.Text;
 
-namespace Lektion_5_Exercise_Arrays_3
+namespace Lektion_5_Exercise_Arrays_4
 {
     // This class is needed for testing console applications. Do not change or remove it.
     class FakeConsole : IDisposable
