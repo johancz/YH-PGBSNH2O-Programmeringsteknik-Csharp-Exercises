@@ -13,6 +13,12 @@ namespace Lektion_6_Exercise_Objects_5
             // We need this to make sure we can always use periods for decimal points.
             CultureInfo.CurrentCulture = CultureInfo.InvariantCulture;
 
+            Exercise();
+        }
+
+        public static void Exercise()
+        {
+            Console.WriteLine("Enter some text:");
             string input = Console.ReadLine();
 
             // Method 1:
@@ -36,6 +42,12 @@ namespace Lektion_6_Exercise_Objects_5
             //    }
             //}
 
+            if (words.Length == 0)
+            {
+                Console.WriteLine("Could not find any words.");
+                return;
+            }
+
             Dictionary<string, int> wordCounts = new Dictionary<string, int>();
 
             foreach (string s in words)
@@ -51,7 +63,8 @@ namespace Lektion_6_Exercise_Objects_5
 
             }
 
-            KeyValuePair<string, int> mostFrequentWord = new KeyValuePair<string, int>("", 0);
+            // Create a "blank" KeyValuePair ('mostFrequentWord') so that there is something to compare to in the first iteration.
+            KeyValuePair<string, int> mostFrequentWord = new KeyValuePair<string, int>(null, 0);
             foreach (KeyValuePair<string, int> wordCount in wordCounts)
             {
                 if (wordCount.Value >= mostFrequentWord.Value)
@@ -81,6 +94,22 @@ namespace Lektion_6_Exercise_Objects_5
             using FakeConsole console = new FakeConsole("hello hello hi hello. hello, hi, hello, hello. hi hi. hi hi,,");
             Program.Main();
             Assert.AreEqual("The most frequent word is hi with 6 occurances.", console.Output);
+        }
+
+        [TestMethod]
+        public void Test3()
+        {
+            using FakeConsole console = new FakeConsole(" . . . ..  ,, ., .. ,. .., ., .,,");
+            Program.Main();
+            Assert.AreEqual("Could not find any words.", console.Output);
+        }
+
+        [TestMethod]
+        public void Test4()
+        {
+            using FakeConsole console = new FakeConsole("e- -e e- e- - -");
+            Program.Main();
+            Assert.AreEqual("The most frequent word is e- with 3 occurances.", console.Output);
         }
     }
 }
