@@ -127,6 +127,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lektion-7-Exercise-problem-
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lektion-7-Exercise-problem-solving-3-palindromes-variant-1", "Lektion-7-Exercise-problem-solving-3-palindromes-variant-1\Lektion-7-Exercise-problem-solving-3-palindromes-variant-1.csproj", "{387A180B-5982-4057-961F-F9C39A387367}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lektion-7-Exercise-problem-solving-2-password", "Lektion-7-Exercise-problem-solving-2-password\Lektion-7-Exercise-problem-solving-2-password.csproj", "{DD7F76C0-BE78-48E6-AB3D-EADA3D73AC04}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -301,6 +303,10 @@ Global
 		{387A180B-5982-4057-961F-F9C39A387367}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{387A180B-5982-4057-961F-F9C39A387367}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{387A180B-5982-4057-961F-F9C39A387367}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DD7F76C0-BE78-48E6-AB3D-EADA3D73AC04}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DD7F76C0-BE78-48E6-AB3D-EADA3D73AC04}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DD7F76C0-BE78-48E6-AB3D-EADA3D73AC04}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DD7F76C0-BE78-48E6-AB3D-EADA3D73AC04}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -362,6 +368,7 @@ Global
 		{97E631A3-C153-4BD4-9F8E-8127A7879DCD} = {BEBA3BB9-A677-4C78-B323-6B0E412AB19F}
 		{0819420F-B6C1-4281-83EA-DCAF30239AE5} = {BEBA3BB9-A677-4C78-B323-6B0E412AB19F}
 		{387A180B-5982-4057-961F-F9C39A387367} = {BEBA3BB9-A677-4C78-B323-6B0E412AB19F}
+		{DD7F76C0-BE78-48E6-AB3D-EADA3D73AC04} = {BEBA3BB9-A677-4C78-B323-6B0E412AB19F}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {7E24C14F-6B05-446D-AC6A-CD36EDE2D939}
