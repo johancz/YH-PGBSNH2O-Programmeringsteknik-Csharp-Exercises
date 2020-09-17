@@ -130,26 +130,26 @@ namespace Session_7_Exercise_problem_solving_6_pangram
         [TestMethod]
         public void Test_BuildAlphabet_variant1()
         {
-            throw new NotImplementedException();
-            using FakeConsole console = new FakeConsole("First input", "Second input");
-            Program.Main();
-            Assert.AreEqual("Hello!", console.Output);
+            List<char> testAlphabet = new List<char> { 'a', 'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j',
+                'k', 'l', 'm','n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y' };
+            List<char> alphabet = Program.BuildAlphabet_variant1();
+            CollectionAssert.AreEqual(testAlphabet, alphabet);
         }
         [TestMethod]
         public void Test_BuildAlphabet_variant2()
         {
-            throw new NotImplementedException();
-            using FakeConsole console = new FakeConsole("First input", "Second input");
-            Program.Main();
-            Assert.AreEqual("Hello!", console.Output);
+            List<char> testAlphabet = new List<char> { 'a', 'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j',
+                'k', 'l', 'm','n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y' };
+            List<char> alphabet = Program.BuildAlphabet_variant2();
+            CollectionAssert.AreEqual(testAlphabet, alphabet);
         }
         [TestMethod]
         public void Test_BuildAlphabet_variant3()
         {
-            throw new NotImplementedException();
-            using FakeConsole console = new FakeConsole("First input", "Second input");
-            Program.Main();
-            Assert.AreEqual("Hello!", console.Output);
+            List<char> testAlphabet = new List<char> { 'a', 'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j',
+                'k', 'l', 'm','n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y' };
+            List<char> alphabet = Program.BuildAlphabet_variant3();
+            CollectionAssert.AreEqual(testAlphabet, alphabet);
         }
         // TODO(johancz): test BuildAlphabet variants.
     }
