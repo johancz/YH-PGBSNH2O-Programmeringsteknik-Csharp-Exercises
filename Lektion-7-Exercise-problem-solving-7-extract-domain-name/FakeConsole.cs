@@ -4,7 +4,7 @@ using System.IO;
 using System.Linq;
 using System.Text;
 
-namespace Lektion_7_Exercise_problem_solving_7_extract_domain_name
+namespace Session_7_Exercise_problem_solving_7_extract_domain_name
 {
     // This class is needed for testing console applications. Do not change or remove it.
     class FakeConsole : IDisposable
