@@ -135,7 +135,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Session-7-Exercise-problem-
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Session-7-Exercise-problem-solving-6-pangram", "Session-7-Exercise-problem-solving-6-pangram\Session-7-Exercise-problem-solving-6-pangram.csproj", "{5DFFB72D-04E4-4408-9FFA-A6807C11AA35}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Session-7-Exercise-problem-solving-7-extract-domain-name", "Session-7-Exercise-problem-solving-7-extract-domain-name\Session-7-Exercise-problem-solving-7-extract-domain-name.csproj", "{7E2DF168-6EE1-4320-A19D-BA2DCB8BF078}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Session-7-Exercise-problem-solving-7-extract-domain-name", "Session-7-Exercise-problem-solving-7-extract-domain-name\Session-7-Exercise-problem-solving-7-extract-domain-name.csproj", "{7E2DF168-6EE1-4320-A19D-BA2DCB8BF078}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Session-7-Exercise-problem-solving-8-censor-string", "Session-7-Exercise-problem-solving-8-censor-string\Session-7-Exercise-problem-solving-8-censor-string.csproj", "{FD4C994E-E986-49B1-BCBA-49FE1A29546A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Session-7-Exercise-problem-solving-8-censor-string-variant-1", "Session-7-Exercise-problem-solving-8-censor-string-variant-1\Session-7-Exercise-problem-solving-8-censor-string-variant-1.csproj", "{E3D702E0-134C-413C-BB51-48E1AD4D3E02}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -331,6 +335,14 @@ Global
 		{7E2DF168-6EE1-4320-A19D-BA2DCB8BF078}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7E2DF168-6EE1-4320-A19D-BA2DCB8BF078}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7E2DF168-6EE1-4320-A19D-BA2DCB8BF078}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FD4C994E-E986-49B1-BCBA-49FE1A29546A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FD4C994E-E986-49B1-BCBA-49FE1A29546A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FD4C994E-E986-49B1-BCBA-49FE1A29546A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FD4C994E-E986-49B1-BCBA-49FE1A29546A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E3D702E0-134C-413C-BB51-48E1AD4D3E02}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E3D702E0-134C-413C-BB51-48E1AD4D3E02}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E3D702E0-134C-413C-BB51-48E1AD4D3E02}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E3D702E0-134C-413C-BB51-48E1AD4D3E02}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -397,6 +409,8 @@ Global
 		{0FD3B1CB-DBCD-4341-B849-9D38C76E008C} = {BEBA3BB9-A677-4C78-B323-6B0E412AB19F}
 		{5DFFB72D-04E4-4408-9FFA-A6807C11AA35} = {BEBA3BB9-A677-4C78-B323-6B0E412AB19F}
 		{7E2DF168-6EE1-4320-A19D-BA2DCB8BF078} = {BEBA3BB9-A677-4C78-B323-6B0E412AB19F}
+		{FD4C994E-E986-49B1-BCBA-49FE1A29546A} = {BEBA3BB9-A677-4C78-B323-6B0E412AB19F}
+		{E3D702E0-134C-413C-BB51-48E1AD4D3E02} = {BEBA3BB9-A677-4C78-B323-6B0E412AB19F}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {7E24C14F-6B05-446D-AC6A-CD36EDE2D939}
