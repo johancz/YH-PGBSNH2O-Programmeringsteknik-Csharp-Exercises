@@ -135,7 +135,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Session-7-Exercise-problem-
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Session-7-Exercise-problem-solving-6-pangram", "Session-7-Exercise-problem-solving-6-pangram\Session-7-Exercise-problem-solving-6-pangram.csproj", "{5DFFB72D-04E4-4408-9FFA-A6807C11AA35}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Session-7-Exercise-problem-solving-7-extract-domain-name", "Lektion-7-Exercise-problem-solving-7-extract-domain-name\Session-7-Exercise-problem-solving-7-extract-domain-name.csproj", "{7E2DF168-6EE1-4320-A19D-BA2DCB8BF078}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Session-7-Exercise-problem-solving-7-extract-domain-name", "Session-7-Exercise-problem-solving-7-extract-domain-name\Session-7-Exercise-problem-solving-7-extract-domain-name.csproj", "{7E2DF168-6EE1-4320-A19D-BA2DCB8BF078}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
