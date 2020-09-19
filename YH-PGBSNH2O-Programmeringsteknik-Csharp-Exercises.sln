@@ -137,9 +137,15 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Session-7-Exercise-problem-
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Session-7-Exercise-problem-solving-7-extract-domain-name", "Session-7-Exercise-problem-solving-7-extract-domain-name\Session-7-Exercise-problem-solving-7-extract-domain-name.csproj", "{7E2DF168-6EE1-4320-A19D-BA2DCB8BF078}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Session-7-Exercise-problem-solving-8-censor-string", "Session-7-Exercise-problem-solving-8-censor-string\Session-7-Exercise-problem-solving-8-censor-string.csproj", "{FD4C994E-E986-49B1-BCBA-49FE1A29546A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Session-7-Exercise-problem-solving-8-censor-string", "Session-7-Exercise-problem-solving-8-censor-string\Session-7-Exercise-problem-solving-8-censor-string.csproj", "{FD4C994E-E986-49B1-BCBA-49FE1A29546A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Session-7-Exercise-problem-solving-8-censor-string-variant-1", "Session-7-Exercise-problem-solving-8-censor-string-variant-1\Session-7-Exercise-problem-solving-8-censor-string-variant-1.csproj", "{E3D702E0-134C-413C-BB51-48E1AD4D3E02}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Session-7-Exercise-problem-solving-8-censor-string-variant-1", "Session-7-Exercise-problem-solving-8-censor-string-variant-1\Session-7-Exercise-problem-solving-8-censor-string-variant-1.csproj", "{E3D702E0-134C-413C-BB51-48E1AD4D3E02}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Session-7-Exercise-problem-solving-9-translate-with-disctionary", "Session-7-Exercise-problem-solving-9-translate-with-disctionary\Session-7-Exercise-problem-solving-9-translate-with-disctionary.csproj", "{F514425A-1733-4B3E-AC5A-455603C7B9DA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Session-7-Exercise-problem-solving-10-compress-string", "Session-7-Exercise-problem-solving-10-compress-string\Session-7-Exercise-problem-solving-10-compress-string.csproj", "{38188B0A-EAD6-4126-BF26-B46ED778FCF3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Session-7-Exercise-problem-solving-11-dice", "Session-7-Exercise-problem-solving-11-dice\Session-7-Exercise-problem-solving-11-dice.csproj", "{99DFFB41-15DD-47C2-B678-C03E4E4899AB}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -343,6 +349,18 @@ Global
 		{E3D702E0-134C-413C-BB51-48E1AD4D3E02}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E3D702E0-134C-413C-BB51-48E1AD4D3E02}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E3D702E0-134C-413C-BB51-48E1AD4D3E02}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F514425A-1733-4B3E-AC5A-455603C7B9DA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F514425A-1733-4B3E-AC5A-455603C7B9DA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F514425A-1733-4B3E-AC5A-455603C7B9DA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F514425A-1733-4B3E-AC5A-455603C7B9DA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{38188B0A-EAD6-4126-BF26-B46ED778FCF3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{38188B0A-EAD6-4126-BF26-B46ED778FCF3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{38188B0A-EAD6-4126-BF26-B46ED778FCF3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{38188B0A-EAD6-4126-BF26-B46ED778FCF3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{99DFFB41-15DD-47C2-B678-C03E4E4899AB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{99DFFB41-15DD-47C2-B678-C03E4E4899AB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{99DFFB41-15DD-47C2-B678-C03E4E4899AB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{99DFFB41-15DD-47C2-B678-C03E4E4899AB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -411,6 +429,9 @@ Global
 		{7E2DF168-6EE1-4320-A19D-BA2DCB8BF078} = {BEBA3BB9-A677-4C78-B323-6B0E412AB19F}
 		{FD4C994E-E986-49B1-BCBA-49FE1A29546A} = {BEBA3BB9-A677-4C78-B323-6B0E412AB19F}
 		{E3D702E0-134C-413C-BB51-48E1AD4D3E02} = {BEBA3BB9-A677-4C78-B323-6B0E412AB19F}
+		{F514425A-1733-4B3E-AC5A-455603C7B9DA} = {BEBA3BB9-A677-4C78-B323-6B0E412AB19F}
+		{38188B0A-EAD6-4126-BF26-B46ED778FCF3} = {BEBA3BB9-A677-4C78-B323-6B0E412AB19F}
+		{99DFFB41-15DD-47C2-B678-C03E4E4899AB} = {BEBA3BB9-A677-4C78-B323-6B0E412AB19F}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {7E24C14F-6B05-446D-AC6A-CD36EDE2D939}
