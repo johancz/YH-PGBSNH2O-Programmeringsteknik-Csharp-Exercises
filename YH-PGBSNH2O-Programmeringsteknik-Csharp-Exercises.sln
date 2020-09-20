@@ -151,6 +151,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Session-7-Exercise-problem-
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Session-7-Exercise-problem-solving-13-pig-latin", "Session-7-Exercise-problem-solving-13-pig-latin\Session-7-Exercise-problem-solving-13-pig-latin.csproj", "{C8028593-C87A-460A-A170-D0A14FCA9F47}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Session-7-Exercise-problem-solving-14-rot13-encryption", "Session-7-Exercise-problem-solving-14-rot13-encryption\Session-7-Exercise-problem-solving-14-rot13-encryption.csproj", "{FD1C6AD0-0594-4A9A-ADDD-D113BD89620C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -373,6 +375,10 @@ Global
 		{C8028593-C87A-460A-A170-D0A14FCA9F47}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C8028593-C87A-460A-A170-D0A14FCA9F47}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C8028593-C87A-460A-A170-D0A14FCA9F47}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FD1C6AD0-0594-4A9A-ADDD-D113BD89620C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FD1C6AD0-0594-4A9A-ADDD-D113BD89620C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FD1C6AD0-0594-4A9A-ADDD-D113BD89620C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FD1C6AD0-0594-4A9A-ADDD-D113BD89620C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -446,6 +452,7 @@ Global
 		{99DFFB41-15DD-47C2-B678-C03E4E4899AB} = {BEBA3BB9-A677-4C78-B323-6B0E412AB19F}
 		{219200F6-A140-4477-8B75-CAEDAE415E84} = {BEBA3BB9-A677-4C78-B323-6B0E412AB19F}
 		{C8028593-C87A-460A-A170-D0A14FCA9F47} = {BEBA3BB9-A677-4C78-B323-6B0E412AB19F}
+		{FD1C6AD0-0594-4A9A-ADDD-D113BD89620C} = {BEBA3BB9-A677-4C78-B323-6B0E412AB19F}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {7E24C14F-6B05-446D-AC6A-CD36EDE2D939}
