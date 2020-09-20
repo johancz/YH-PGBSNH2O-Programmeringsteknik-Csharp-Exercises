@@ -32,6 +32,7 @@ namespace Session_7_Exercise_problem_solving_11_dice
             ParseDiceRoll(input);
         }
 
+        //public static int ParseDiceRoll(string diceRoll)
         public static void ParseDiceRoll(string diceRoll)
         {
             Console.WriteLine("Dice roll string:\t " + diceRoll);
@@ -51,7 +52,7 @@ namespace Session_7_Exercise_problem_solving_11_dice
                 int i_of_minus = diceRoll.IndexOf("-", current_i);
                 int i_of_modifier = -1;
                 int len_of_sidesString = 0;
-                if (i_of_plus > current_i || i_of_minus > current_i)
+                if (i_of_plus >= current_i || i_of_minus >= current_i)
                 {
                     i_of_modifier = (i_of_minus > i_of_plus ? i_of_minus : i_of_plus);
                     len_of_sidesString = i_of_modifier  - current_i;
@@ -75,17 +76,16 @@ namespace Session_7_Exercise_problem_solving_11_dice
                             sumOfRolls += random.Next(1, sideCount);
                         }
 
-                        if (i_of_modifier > -1
-                            && int.TryParse(diceRoll.Substring(i_of_modifier), out int modifierValue))
+                        if (i_of_modifier > -1 && int.TryParse(diceRoll.Substring(i_of_modifier), out int modifierValue))
                         {
                             sumOfRolls += modifierValue;
-
                         }
 
                         Console.WriteLine("Sum of rolls:\t " + sumOfRolls);
                         Console.WriteLine();
 
                         // The string was succesfully parsed, exit out of method.
+                        //return sumOfRolls;
                         return;
                     }
                 }
@@ -93,6 +93,7 @@ namespace Session_7_Exercise_problem_solving_11_dice
 
             Console.WriteLine("Invalid dice roll string format!");
             Console.WriteLine();
+            //return -1;
         }
     }
 
@@ -208,6 +209,36 @@ namespace Session_7_Exercise_problem_solving_11_dice
             Program.Main();
             CollectionAssert.AreEqual(new[] {
                 "Dice roll string:\t 5d6+10-11",
+                "Invalid dice roll string format!"
+            }, console.Lines);
+        }
+        [TestMethod]
+        public void Test13()
+        {
+            using FakeConsole console = new FakeConsole("5d+");
+            Program.Main();
+            CollectionAssert.AreEqual(new[] {
+                "Dice roll string:\t 5d+",
+                "Invalid dice roll string format!"
+            }, console.Lines);
+        }
+        [TestMethod]
+        public void Test14()
+        {
+            using FakeConsole console = new FakeConsole("5d");
+            Program.Main();
+            CollectionAssert.AreEqual(new[] {
+                "Dice roll string:\t 5d",
+                "Invalid dice roll string format!"
+            }, console.Lines);
+        }
+        [TestMethod]
+        public void Test15()
+        {
+            using FakeConsole console = new FakeConsole("5d+10");
+            Program.Main();
+            CollectionAssert.AreEqual(new[] {
+                "Dice roll string:\t 5d+10",
                 "Invalid dice roll string format!"
             }, console.Lines);
         }
