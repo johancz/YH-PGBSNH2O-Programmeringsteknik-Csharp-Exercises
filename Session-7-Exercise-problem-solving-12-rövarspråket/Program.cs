@@ -21,10 +21,10 @@ namespace Session_7_Exercise_problem_solving_12_rövarspråket
             CultureInfo.CurrentCulture = CultureInfo.InvariantCulture;
 
             Console.WriteLine("Input the text you want to translate to \"rövarspråket\":");
-            char[] consonants = new char[] {
-                'b', 'c', 'd', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'p', 'q', 'r',
-                's', 't', 'v', 'w', 'x', 'y', 'z', 'B', 'C', 'D', 'F', 'G', 'H', 'I', 'J',
-                'K', 'L', 'M', 'N', 'P', 'Q', 'R', 'S', 'T', 'V', 'W', 'X', 'Y', 'Z'
+            char[] consonantsSwedish = new char[] {
+                'b', 'c', 'd', 'f', 'g', 'h', 'j', 'k', 'l', 'm', 'n', 'p', 'q', 'r',
+                's', 't', 'v', 'w', 'x', 'z', 'B', 'C', 'D', 'F', 'G', 'H', 'J',
+                'K', 'L', 'M', 'N', 'P', 'Q', 'R', 'S', 'T', 'V', 'W', 'X', 'Z'
             };
 
             string input = Console.ReadLine();
@@ -34,7 +34,7 @@ namespace Session_7_Exercise_problem_solving_12_rövarspråket
             {
                 translatedText += c;
 
-                if (consonants.Contains(c))
+                if (consonantsSwedish.Contains(c))
                 {
                     translatedText += "" + 'o' + c;
                 }
