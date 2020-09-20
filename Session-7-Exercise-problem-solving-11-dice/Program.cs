@@ -63,15 +63,8 @@ namespace Session_7_Exercise_problem_solving_11_dice
 
                 if (len_of_sidesString > 0)
                 {
-
                     // Number of sides on each die.
                     string diceSides = diceRoll.Substring(current_i, len_of_sidesString);
-
-
-                    //if (i_of_d < i_of_plus && i_ + 1 < diceRoll.Length) // && i_of_minus + 1 < input.Length)
-                    //{
-                    //}
-
                     if (int.TryParse(numberOfDice, out int dieCount) && int.TryParse(diceSides, out int sideCount))
                     {
                         Random random = new Random();
@@ -80,33 +73,15 @@ namespace Session_7_Exercise_problem_solving_11_dice
                         {
                             // 1 sided die? a möbius strip?
                             sumOfRolls += random.Next(1, sideCount);
-                            //Console.WriteLine("sumOfRolls: " + sumOfRolls);
                         }
 
-                        //int modifierValue = 0;
                         if (i_of_modifier > -1
-                            && (i_of_modifier + 1) < diceRoll.Length
                             && int.TryParse(diceRoll.Substring(i_of_modifier), out int modifierValue))
                         {
-                            //char modifierType = diceRoll[i_of_modifier];
-
-                            //if (modifierType == '-')
-                            //{
-                                sumOfRolls += modifierValue;
-                            //}
-                            //else if (modifierType == '+')
-                            //{
-                            //}
+                            sumOfRolls += modifierValue;
 
                         }
 
-
-                        //Console.WriteLine("i_of_plus:\t " + i_of_plus);
-                        //Console.WriteLine("i_of_minus:\t " + i_of_minus);
-                        //Console.WriteLine("i_of_modifier:\t " + len_of_sidesString);
-                        //Console.WriteLine("current_i:\t " + current_i);
-                        //Console.WriteLine("# of dice:\t " + numberOfDice);
-                        //Console.WriteLine("# of die sides:\t " + diceSides);
                         Console.WriteLine("Sum of rolls:\t " + sumOfRolls);
                         Console.WriteLine();
 
@@ -136,9 +111,9 @@ namespace Session_7_Exercise_problem_solving_11_dice
         [TestMethod]
         public void Test2()
         {
-            using FakeConsole console = new FakeConsole("3d5+");
+            using FakeConsole console = new FakeConsole("3d5-");
             Program.Main();
-            Assert.AreEqual("Dice roll string:\t 3d5+", console.Lines[0]);
+            Assert.AreEqual("Dice roll string:\t 3d5-", console.Lines[0]);
             //StringAssert.StartsWith(console.Output, "Sum of rolls:\t ");
             StringAssert.Matches(console.Output, new Regex(@"Sum of rolls:\t \d+"));
         }
