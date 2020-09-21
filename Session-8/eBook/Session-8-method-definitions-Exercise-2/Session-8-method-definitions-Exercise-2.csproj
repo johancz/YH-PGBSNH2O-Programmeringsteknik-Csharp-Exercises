@@ -2,7 +2,7 @@
 
   <PropertyGroup>
     <TargetFramework>netcoreapp3.1</TargetFramework>
-    <RootNamespace>Session8_method_definitions_Exercise1</RootNamespace>
+    <RootNamespace>Session_8_method_definitions_Exercise_2</RootNamespace>
     <IsPackable>false</IsPackable>
     <GenerateProgramFile>false</GenerateProgramFile>
   </PropertyGroup>

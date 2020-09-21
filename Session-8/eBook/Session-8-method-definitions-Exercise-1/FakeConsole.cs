@@ -4,7 +4,7 @@ using System.IO;
 using System.Linq;
 using System.Text;
 
-namespace Session8_method_definitions_Exercise1
+namespace Session_8_method_definitions_Exercise_1
 {
     // This class is needed for testing console applications. Do not change or remove it.
     class FakeConsole : IDisposable

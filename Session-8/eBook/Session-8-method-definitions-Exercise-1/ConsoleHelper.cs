@@ -2,7 +2,7 @@
 using System.Linq;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
-namespace Session8_method_definitions_Exercise1
+namespace Session_8_method_definitions_Exercise_1
 {
     public class ConsoleHelper
     {
