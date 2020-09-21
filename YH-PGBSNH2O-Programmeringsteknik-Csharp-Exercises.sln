@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30413.136
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Session-2", "Lektion-2\Lektion-2.csproj", "{7D32B0CA-98CE-4B0E-A9C7-A9384FDA21E5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Lektion-2", "Lektion-2\Lektion-2.csproj", "{7D32B0CA-98CE-4B0E-A9C7-A9384FDA21E5}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Lektion-3-Exercise-1", "Lektion-3-Exercise-1\Lektion-3-Exercise-1.csproj", "{6A16F5D8-0F45-4B45-86EC-D13B3881C483}"
 EndProject
@@ -165,9 +165,11 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Paper Book", "Paper Book", 
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "notes", "notes", "{B12EF46B-F050-443E-9CA0-1DE3FC5E4E0E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Session-8-method-definitions-Exercise-1", "Session-8\eBook\Session-8-method-definitions-Exercise-1\Session-8-method-definitions-Exercise-1.csproj", "{1AEDDB5B-1C51-4C20-AE86-950FCE8B77C4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Session-8-method-definitions-Exercise-1", "Session-8\eBook\Session-8-method-definitions-Exercise-1\Session-8-method-definitions-Exercise-1.csproj", "{1AEDDB5B-1C51-4C20-AE86-950FCE8B77C4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Session-8-method-definitions-Exercise-2", "Session-8\eBook\Session-8-method-definitions-Exercise-2\Session-8-method-definitions-Exercise-2.csproj", "{66CF3480-EC9F-4226-BFA1-9428C15C97C9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Session-8-method-definitions-Exercise-2", "Session-8\eBook\Session-8-method-definitions-Exercise-2\Session-8-method-definitions-Exercise-2.csproj", "{66CF3480-EC9F-4226-BFA1-9428C15C97C9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Session-8-method-definitions-Exercise-3", "Session-8\eBook\Session-8-method-definitions-Exercise-3\Session-8-method-definitions-Exercise-3.csproj", "{B3B75152-0862-4D0D-8DE2-2A64FCEEA295}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -407,6 +409,10 @@ Global
 		{66CF3480-EC9F-4226-BFA1-9428C15C97C9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{66CF3480-EC9F-4226-BFA1-9428C15C97C9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{66CF3480-EC9F-4226-BFA1-9428C15C97C9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B3B75152-0862-4D0D-8DE2-2A64FCEEA295}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B3B75152-0862-4D0D-8DE2-2A64FCEEA295}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B3B75152-0862-4D0D-8DE2-2A64FCEEA295}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B3B75152-0862-4D0D-8DE2-2A64FCEEA295}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -488,6 +494,7 @@ Global
 		{B12EF46B-F050-443E-9CA0-1DE3FC5E4E0E} = {18C3D9BC-9938-4949-8BD7-0C1BFFD8C287}
 		{1AEDDB5B-1C51-4C20-AE86-950FCE8B77C4} = {153E0314-C313-44E8-B07E-350D5CD6C377}
 		{66CF3480-EC9F-4226-BFA1-9428C15C97C9} = {153E0314-C313-44E8-B07E-350D5CD6C377}
+		{B3B75152-0862-4D0D-8DE2-2A64FCEEA295} = {153E0314-C313-44E8-B07E-350D5CD6C377}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {7E24C14F-6B05-446D-AC6A-CD36EDE2D939}
