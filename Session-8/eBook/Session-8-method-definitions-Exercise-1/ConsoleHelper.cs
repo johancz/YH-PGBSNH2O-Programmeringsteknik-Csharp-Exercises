@@ -26,6 +26,7 @@ namespace Session_8_method_definitions_Exercise_1
                 if (!int.TryParse(Console.ReadLine(), out input_int))
                 {
                     Console.WriteLine("Invalid input, cannot convert to 'Integer'. Try again!");
+                    continue;
                 }
 
                 break;
@@ -45,6 +46,7 @@ namespace Session_8_method_definitions_Exercise_1
                 if (!double.TryParse(Console.ReadLine(), out input_double))
                 {
                     Console.WriteLine("Invalid input, cannot convert to 'Double'. Try again!");
+                    continue;
                 }
 
                 break;
@@ -77,6 +79,7 @@ namespace Session_8_method_definitions_Exercise_1
                 else if (!couldParse)
                 {
                     Console.WriteLine("Invalid input, cannot convert to 'Boolean'. Try again!");
+                    continue;
                 }
 
                 break;
