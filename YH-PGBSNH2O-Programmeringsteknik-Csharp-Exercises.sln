@@ -147,13 +147,25 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Session-7-Exercise-problem-
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Session-7-Exercise-problem-solving-11-dice", "Session-7-Exercise-problem-solving-11-dice\Session-7-Exercise-problem-solving-11-dice.csproj", "{99DFFB41-15DD-47C2-B678-C03E4E4899AB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Session-7-Exercise-problem-solving-12-rövarspråket", "Session-7-Exercise-problem-solving-12-rövarspråket\Session-7-Exercise-problem-solving-12-rövarspråket.csproj", "{219200F6-A140-4477-8B75-CAEDAE415E84}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Session-7-Exercise-problem-solving-12-rövarspråket", "Session-7-Exercise-problem-solving-12-rövarspråket\Session-7-Exercise-problem-solving-12-rövarspråket.csproj", "{219200F6-A140-4477-8B75-CAEDAE415E84}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Session-7-Exercise-problem-solving-13-pig-latin", "Session-7-Exercise-problem-solving-13-pig-latin\Session-7-Exercise-problem-solving-13-pig-latin.csproj", "{C8028593-C87A-460A-A170-D0A14FCA9F47}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Session-7-Exercise-problem-solving-13-pig-latin", "Session-7-Exercise-problem-solving-13-pig-latin\Session-7-Exercise-problem-solving-13-pig-latin.csproj", "{C8028593-C87A-460A-A170-D0A14FCA9F47}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Session-7-Exercise-problem-solving-14-rot13-encryption", "Session-7-Exercise-problem-solving-14-rot13-encryption\Session-7-Exercise-problem-solving-14-rot13-encryption.csproj", "{FD1C6AD0-0594-4A9A-ADDD-D113BD89620C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Session-7-Exercise-problem-solving-14-rot13-encryption", "Session-7-Exercise-problem-solving-14-rot13-encryption\Session-7-Exercise-problem-solving-14-rot13-encryption.csproj", "{FD1C6AD0-0594-4A9A-ADDD-D113BD89620C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Session-7-Exercise-problem-solving-14-rot13-encryption-variant-1", "Session-7-Exercise-problem-solving-14-rot13-encryption-variant-1\Session-7-Exercise-problem-solving-14-rot13-encryption-variant-1.csproj", "{1565D13C-5AFD-45EB-BB69-261C986B5B47}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Session-7-Exercise-problem-solving-14-rot13-encryption-variant-1", "Session-7-Exercise-problem-solving-14-rot13-encryption-variant-1\Session-7-Exercise-problem-solving-14-rot13-encryption-variant-1.csproj", "{1565D13C-5AFD-45EB-BB69-261C986B5B47}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Session08", "Session08", "{80DDEF4C-EB83-4FC5-A341-3E4C42E80801}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "eBook", "eBook", "{153E0314-C313-44E8-B07E-350D5CD6C377}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "notes", "notes", "{7C4D2647-C3AA-4FFC-9ED9-FC14A4E616AE}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Paper Book", "Paper Book", "{18C3D9BC-9938-4949-8BD7-0C1BFFD8C287}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "notes", "notes", "{B12EF46B-F050-443E-9CA0-1DE3FC5E4E0E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Session8-method-definitions-Exercise1", "Session8-method-definitions-Exercise1\Session8-method-definitions-Exercise1.csproj", "{1AEDDB5B-1C51-4C20-AE86-950FCE8B77C4}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -385,6 +397,10 @@ Global
 		{1565D13C-5AFD-45EB-BB69-261C986B5B47}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1565D13C-5AFD-45EB-BB69-261C986B5B47}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1565D13C-5AFD-45EB-BB69-261C986B5B47}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1AEDDB5B-1C51-4C20-AE86-950FCE8B77C4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1AEDDB5B-1C51-4C20-AE86-950FCE8B77C4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1AEDDB5B-1C51-4C20-AE86-950FCE8B77C4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1AEDDB5B-1C51-4C20-AE86-950FCE8B77C4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -460,6 +476,11 @@ Global
 		{C8028593-C87A-460A-A170-D0A14FCA9F47} = {BEBA3BB9-A677-4C78-B323-6B0E412AB19F}
 		{FD1C6AD0-0594-4A9A-ADDD-D113BD89620C} = {BEBA3BB9-A677-4C78-B323-6B0E412AB19F}
 		{1565D13C-5AFD-45EB-BB69-261C986B5B47} = {BEBA3BB9-A677-4C78-B323-6B0E412AB19F}
+		{153E0314-C313-44E8-B07E-350D5CD6C377} = {80DDEF4C-EB83-4FC5-A341-3E4C42E80801}
+		{7C4D2647-C3AA-4FFC-9ED9-FC14A4E616AE} = {153E0314-C313-44E8-B07E-350D5CD6C377}
+		{18C3D9BC-9938-4949-8BD7-0C1BFFD8C287} = {80DDEF4C-EB83-4FC5-A341-3E4C42E80801}
+		{B12EF46B-F050-443E-9CA0-1DE3FC5E4E0E} = {18C3D9BC-9938-4949-8BD7-0C1BFFD8C287}
+		{1AEDDB5B-1C51-4C20-AE86-950FCE8B77C4} = {153E0314-C313-44E8-B07E-350D5CD6C377}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {7E24C14F-6B05-446D-AC6A-CD36EDE2D939}
