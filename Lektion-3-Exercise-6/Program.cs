@@ -4,6 +4,10 @@ using Microsoft.VisualStudio.TestTools.UnitTesting;
 
 namespace Lektion_3_Exercise_6
 {
+    // Write a program that recreates a decision flowchart, allowing the user to enter answers to questions and step by step arrive at an answer or suggestion. The program should start by asking a question, then read the answer to that question from the user, repeat the process, and finally stop once an end of the flowchart has been reached. Find any such flowchart online or use the one below:
+
+    //// Do not bother with error handling, and simply assume that the user will always enter one of the valid answers in the current position on the flowchart.
+    //// Does your decision flowchart contain any paths that can be followed forever? (In other words: a cycle or “loop”.) Does the program handle this? If yes, how? If no, what do you think you would need in order to support this as well?
     public class Program
     {
         public static void Main()

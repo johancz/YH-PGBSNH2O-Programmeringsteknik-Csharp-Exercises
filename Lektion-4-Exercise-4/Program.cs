@@ -43,5 +43,15 @@ namespace Lektion_4_Exercise_4
                 "Lift off!"
             }, console.Lines);
         }
+
+        [TestMethod]
+        public void TestNegative()
+        {
+            using FakeConsole console = new FakeConsole("-5");
+            Program.Main();
+            CollectionAssert.AreEqual(new[] {
+                "Lift off!"
+            }, console.Lines);
+        }
     }
 }
