@@ -12,12 +12,6 @@ namespace Session_8_method_definitions_Exercise_3
         public static void Main()
         {
             CultureInfo.CurrentCulture = CultureInfo.InvariantCulture;
-            //CultureInfo.CurrentCulture = CultureInfo.InvariantCulture;
-            //string s = "999.99";
-            //Console.WriteLine(double.TryParse(s, out double d));
-
-            //var input = ConsoleHelper.ReadDouble("");
-            //bool isLarge = Program.IsLarge(input);
         }
 
         public static bool IsLarge(string input)
@@ -39,6 +33,12 @@ namespace Session_8_method_definitions_Exercise_3
     [TestClass]
     public class ProgramTests
     {
+        [TestInitialize]
+        public void TestInit()
+        {
+            CultureInfo.CurrentCulture = CultureInfo.InvariantCulture;
+        }
+
         [TestMethod]
         public void Test_String_tooShort()
         {
@@ -81,7 +81,7 @@ namespace Session_8_method_definitions_Exercise_3
             using FakeConsole console = new FakeConsole("999.99");
             var input = ConsoleHelper.ReadDouble("");
             bool isLarge = Program.IsLarge(input);
-            Assert.AreEqual(true, isLarge);
+            Assert.AreEqual(false, isLarge);
         }
 
         [TestMethod]
@@ -89,6 +89,24 @@ namespace Session_8_method_definitions_Exercise_3
         {
             using FakeConsole console = new FakeConsole("1000.01");
             var input = ConsoleHelper.ReadDouble("");
+            bool isLarge = Program.IsLarge(input);
+            Assert.AreEqual(true, isLarge);
+        }
+
+        [TestMethod]
+        public void Test_EmptyInput()
+        {
+            using FakeConsole console = new FakeConsole(" ");
+            var input = ConsoleHelper.ReadDouble("");
+            bool isLarge = Program.IsLarge(input);
+            Assert.AreEqual(true, isLarge);
+        }
+
+        [TestMethod]
+        public void Test_String_longEnough_butOnlyBlankspace()
+        {
+            using FakeConsole console = new FakeConsole("                                                   ");
+            var input = ConsoleHelper.ReadString("");
             bool isLarge = Program.IsLarge(input);
             Assert.AreEqual(true, isLarge);
         }

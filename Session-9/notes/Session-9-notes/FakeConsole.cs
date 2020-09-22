@@ -4,7 +4,7 @@ using System.IO;
 using System.Linq;
 using System.Text;
 
-namespace Session_8_method_definitions_Exercise_3
+namespace Session_9_notes
 {
     // This class is needed for testing console applications. Do not change or remove it.
     class FakeConsole : IDisposable
@@ -16,21 +16,6 @@ namespace Session_8_method_definitions_Exercise_3
         private FakeConsoleOut fakeOut;
 
         private bool isReading = false;
-
-        public string[] AllLines
-        {
-            get {
-                List<string> allLines = new List<string>();
-
-                foreach (string output in fakeOut.Outputs)
-                {
-                    allLines.AddRange(output.Trim(Environment.NewLine.ToCharArray())
-                                            .Split(new[] { Environment.NewLine }, StringSplitOptions.None));
-                }
-
-                return allLines.ToArray();
-            }
-        }
 
         public string[] Lines
         {

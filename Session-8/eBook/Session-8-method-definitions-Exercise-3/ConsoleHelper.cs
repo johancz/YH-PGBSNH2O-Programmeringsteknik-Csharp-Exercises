@@ -2,6 +2,7 @@
 using System.Linq;
 using System.Globalization;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
+using System.IO;
 
 namespace Session_8_method_definitions_Exercise_3
 {
@@ -38,15 +39,13 @@ namespace Session_8_method_definitions_Exercise_3
 
         public static double ReadDouble(string prompt)
         {
-            CultureInfo.CurrentCulture = CultureInfo.InvariantCulture;
             double input_double;
 
             while (true)
             {
                 Console.WriteLine(prompt);
-                string d = Console.ReadLine();
 
-                if (!double.TryParse(d, out input_double))
+                if (!double.TryParse(Console.ReadLine(), out input_double))
                 {
                     Console.WriteLine("Invalid input, cannot convert to 'Double'. Try again!");
                     continue;
@@ -99,8 +98,8 @@ namespace Session_8_method_definitions_Exercise_3
         public void Test_ReadString()
         {
             using FakeConsole console = new FakeConsole("This is a test string.");
-            string input_bool = ConsoleHelper.ReadString("String string test:");
-            Assert.AreEqual("This is a test string.", input_bool);
+            string input = ConsoleHelper.ReadString("String string test:");
+            Assert.AreEqual("This is a test string.", input);
         }
     }
 
@@ -110,17 +109,30 @@ namespace Session_8_method_definitions_Exercise_3
         [TestMethod]
         public void Test_ReadInt()
         {
-            throw new NotImplementedException();
+            //throw new NotImplementedException();
+            using FakeConsole console = new FakeConsole("This is a test string.");
+            int input = ConsoleHelper.ReadInt("String string test:");
+            Assert.AreEqual("This is a test string.", input);
         }
     }
 
     [TestClass]
     public class ConsoleHelper_ReadDouble
     {
+        [TestInitialize]
+        public void TestInit()
+        {
+            CultureInfo.CurrentCulture = CultureInfo.InvariantCulture;
+        }
+
         [TestMethod]
         public void Test_ReadDouble()
         {
-            throw new NotImplementedException();
+            //throw new NotImplementedException();
+            using FakeConsole console = new FakeConsole("This is a test string.", "1.1");
+            double input = ConsoleHelper.ReadDouble("String string test:");
+            Console.WriteLine(input);
+            Assert.AreEqual(1.0, console.AllLines[1]);
         }
     }
 
