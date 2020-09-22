@@ -61,5 +61,19 @@ namespace Session_7_Exercise_problem_solving_9_translate_with_disctionary
             Program.Main();
             Assert.AreEqual("merry christmas EVERYBODY", console.Output);
         }
+        [TestMethod]
+        public void Test3()
+        {
+            using FakeConsole console = new FakeConsole("merry christmas");
+            Program.Main();
+            Assert.AreEqual("merry christmas", console.Output);
+        }
+        [TestMethod]
+        public void Test4()
+        {
+            using FakeConsole console = new FakeConsole("Merry hello Christmas");
+            Program.Main();
+            Assert.AreEqual("God hello jul", console.Output);
+        }
     }
 }
