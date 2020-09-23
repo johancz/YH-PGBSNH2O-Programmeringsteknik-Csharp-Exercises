@@ -189,6 +189,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Large-Exercise--Guest-the-n
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Session-7-Exercise-learning-datetime-1-leap-years", "Session-7\eBook\Session-7-Exercise-learning-datetime-1-leap-years\Session-7-Exercise-learning-datetime-1-leap-years.csproj", "{A1957E68-F82C-44C0-93FF-5B98B13BD505}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Session-7-Exercise-learning-datetime-2-dateofbirth-days-old", "Session-7\eBook\Session-7-Exercise-learning-datetime-2-dateofbirth-days-old\Session-7-Exercise-learning-datetime-2-dateofbirth-days-old.csproj", "{660E3F09-FEC0-4B34-9230-2F0B1824442A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -447,6 +449,10 @@ Global
 		{A1957E68-F82C-44C0-93FF-5B98B13BD505}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A1957E68-F82C-44C0-93FF-5B98B13BD505}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A1957E68-F82C-44C0-93FF-5B98B13BD505}.Release|Any CPU.Build.0 = Release|Any CPU
+		{660E3F09-FEC0-4B34-9230-2F0B1824442A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{660E3F09-FEC0-4B34-9230-2F0B1824442A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{660E3F09-FEC0-4B34-9230-2F0B1824442A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{660E3F09-FEC0-4B34-9230-2F0B1824442A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -536,6 +542,7 @@ Global
 		{A9BF4BA7-A08C-4152-A3FD-20D61FBAF8CE} = {6003CD76-95D6-4676-B189-2434336CA7AD}
 		{6504AFA9-F63C-40E7-AC38-5448090227F6} = {A9BF4BA7-A08C-4152-A3FD-20D61FBAF8CE}
 		{A1957E68-F82C-44C0-93FF-5B98B13BD505} = {BEBA3BB9-A677-4C78-B323-6B0E412AB19F}
+		{660E3F09-FEC0-4B34-9230-2F0B1824442A} = {BEBA3BB9-A677-4C78-B323-6B0E412AB19F}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {7E24C14F-6B05-446D-AC6A-CD36EDE2D939}
