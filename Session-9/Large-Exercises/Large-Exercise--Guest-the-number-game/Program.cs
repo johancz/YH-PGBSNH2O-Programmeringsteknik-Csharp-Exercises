@@ -12,12 +12,6 @@ namespace Large_Exercise__Guest_the_number_game
         {
             CultureInfo.CurrentCulture = CultureInfo.InvariantCulture;
 
-            // generate random number
-            // read input from user, parse to int {
-            //     compare user input to the random number
-            //     if higher or lower, inform the user of this
-            // } do this until the user has guessed the correct number
-
             Game_New();
         }
 
@@ -26,8 +20,8 @@ namespace Large_Exercise__Guest_the_number_game
             Random rCPU = new Random();
             List<int> games = new List<int>();
 
-            int selectedOption;
-            do
+            int selectedOption = -1;
+            while (selectedOption != 2)
             {
                 selectedOption = ShowMenu("Game Menu", new[] { "Play", "Lowscore", "Exit" });
 
@@ -38,6 +32,7 @@ namespace Large_Exercise__Guest_the_number_game
                 }
                 else if (selectedOption == 1)
                 {
+                    Console.Clear();
                     int i = 0;
                     foreach (int guesses in games)
                     {
@@ -50,7 +45,7 @@ namespace Large_Exercise__Guest_the_number_game
                 }
 
                 Console.Clear();
-            } while (selectedOption != 2);
+            }
         }
 
         public static int Game_NextRound(int rCPU_number)
@@ -73,7 +68,11 @@ namespace Large_Exercise__Guest_the_number_game
                 else if (input_int == rCPU_number)
                 {
                     Console.WriteLine("You guessed correctly.");
-                    
+
+                    Console.WriteLine();
+                    Console.WriteLine("Press 'Enter' to return to the menu.");
+                    Console.ReadLine();
+
                     return ++guesses;
                 }
                 else if (input_int < rCPU_number)
@@ -154,9 +153,12 @@ namespace Large_Exercise__Guest_the_number_game
         [TestMethod]
         public void ExampleTest()
         {
-            using FakeConsole console = new FakeConsole("First input", "Second input");
-            Program.Main();
-            Assert.AreEqual("Hello!", console.Output);
+            using FakeConsole console = new FakeConsole("56", "57");
+            int guesses = Program.Game_NextRound(57);
+            CollectionAssert.AreEqual(new[] {
+                "Too Small!",
+                "Guess the CPU's number (1-99):"
+            }, console.AllLines);
         }
     }
 }
