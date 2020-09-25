@@ -36,7 +36,7 @@ namespace Session_7_Exercise_problem_solving_8_censor_string_variant_1
                     words.Add(word);
                     word = "";
                 }
-                else if ()
+                //else if ()
 
 
                     //////////

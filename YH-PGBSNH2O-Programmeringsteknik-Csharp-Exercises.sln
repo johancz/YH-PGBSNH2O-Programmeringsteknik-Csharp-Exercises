@@ -199,6 +199,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Session-7-Exercise-learning
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Session-7-Exercise-learning-datetime-5-current-datetime-format", "Session-7-Exercise-learning-datetime-5-current-datetime-format\Session-7-Exercise-learning-datetime-5-current-datetime-format.csproj", "{056237B6-F7E6-4059-AA1A-1BDB77C7F159}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Session-7-Exercise-learning-datetime-6-difference-hours-GBG-NYC", "Session-7\eBook\Session-7-Exercise-learning-datetime-6-difference-hours-GBG-NYC\Session-7-Exercise-learning-datetime-6-difference-hours-GBG-NYC.csproj", "{E93B3EAE-8CBE-4062-BAD9-C478EA244E23}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -477,6 +479,10 @@ Global
 		{056237B6-F7E6-4059-AA1A-1BDB77C7F159}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{056237B6-F7E6-4059-AA1A-1BDB77C7F159}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{056237B6-F7E6-4059-AA1A-1BDB77C7F159}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E93B3EAE-8CBE-4062-BAD9-C478EA244E23}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E93B3EAE-8CBE-4062-BAD9-C478EA244E23}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E93B3EAE-8CBE-4062-BAD9-C478EA244E23}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E93B3EAE-8CBE-4062-BAD9-C478EA244E23}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -571,6 +577,7 @@ Global
 		{D1BF0E9A-5C4E-429C-AE5A-7B021003158A} = {BEBA3BB9-A677-4C78-B323-6B0E412AB19F}
 		{A63D3ACE-646C-486A-BE1B-6F0224ACBFFC} = {BEBA3BB9-A677-4C78-B323-6B0E412AB19F}
 		{056237B6-F7E6-4059-AA1A-1BDB77C7F159} = {BEBA3BB9-A677-4C78-B323-6B0E412AB19F}
+		{E93B3EAE-8CBE-4062-BAD9-C478EA244E23} = {BEBA3BB9-A677-4C78-B323-6B0E412AB19F}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {7E24C14F-6B05-446D-AC6A-CD36EDE2D939}
