@@ -187,41 +187,41 @@ namespace Session_7_Exercise_learning_datetime_2_variant_1_fancy_date_selector
     [TestClass]
     public class ProgramTests
     {
-    //    [TestMethod]
-    //    public void Main_TestOutput_7305daysRoundedToZeroDecimals()
-    //    {
-    //        FakeConsole console = new FakeConsole("January 2000");
-    //        DateTime start = DateTime.Parse("January 2000");
-    //        DateTime end = DateTime.Parse("January 2020");
-    //        Program.Main();
-    //        Assert.AreEqual(7305d, console.Output);
-    //    }
-    //    [TestMethod]
-    //    public void HowManyDaysOld_January2000UntilJanuary2020_7305daysRoundedToZeroDecimals()
-    //    {
-    //        DateTime start = DateTime.Parse("January 2000");
-    //        DateTime end = DateTime.Parse("January 2020");
-    //        double days = Program.HowManyDaysOld(start, end, 0);
-    //        Assert.AreEqual(7305d, days, 1.0d);
-    //    }
+        //    [TestMethod]
+        //    public void Main_TestOutput_7305daysRoundedToZeroDecimals()
+        //    {
+        //        FakeConsole console = new FakeConsole("January 2000");
+        //        DateTime start = DateTime.Parse("January 2000");
+        //        DateTime end = DateTime.Parse("January 2020");
+        //        Program.Main();
+        //        Assert.AreEqual(7305d, console.Output);
+        //    }
+        //    [TestMethod]
+        //    public void HowManyDaysOld_January2000UntilJanuary2020_7305daysRoundedToZeroDecimals()
+        //    {
+        //        DateTime start = DateTime.Parse("January 2000");
+        //        DateTime end = DateTime.Parse("January 2020");
+        //        double days = Program.HowManyDaysOld(start, end, 0);
+        //        Assert.AreEqual(7305d, days, 1.0d);
+        //    }
 
-    //    [TestMethod]
-    //    public void HowManyDaysOld_January2000UntilJanuary2020_7305daysRoundedToOneDecimal()
-    //    {
-    //        DateTime start = DateTime.Parse("January 2000");
-    //        DateTime end = DateTime.Parse("January 2020");
-    //        double days = Program.HowManyDaysOld(start, end, 0);
-    //        Assert.AreEqual(7305d, days, 1.0d);
-    //    }
+        //    [TestMethod]
+        //    public void HowManyDaysOld_January2000UntilJanuary2020_7305daysRoundedToOneDecimal()
+        //    {
+        //        DateTime start = DateTime.Parse("January 2000");
+        //        DateTime end = DateTime.Parse("January 2020");
+        //        double days = Program.HowManyDaysOld(start, end, 0);
+        //        Assert.AreEqual(7305d, days, 1.0d);
+        //    }
 
-    //    [TestMethod]
-    //    public void HowManyDaysOld_January2000UntilDateTimeNow_7305daysRoundedToOneDecimal()
-    //    {
-    //        DateTime start = DateTime.Parse("January 2000");
-    //        DateTime now = DateTime.Now;
-    //        double days = Program.HowManyDaysOld(start, 0);
-    //        Assert.AreEqual(7305d, days, 1.0d);
-    //    }
-    //}
+        //    [TestMethod]
+        //    public void HowManyDaysOld_January2000UntilDateTimeNow_7305daysRoundedToOneDecimal()
+        //    {
+        //        DateTime start = DateTime.Parse("January 2000");
+        //        DateTime now = DateTime.Now;
+        //        double days = Program.HowManyDaysOld(start, 0);
+        //        Assert.AreEqual(7305d, days, 1.0d);
+        //    }
+    }
 }
 
