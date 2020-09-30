@@ -27,7 +27,7 @@ namespace Session_3_Paperbook_Chapter_4_Exercise_8_Bank_Simulator
             CultureInfo.CurrentCulture = CultureInfo.InvariantCulture;
 
             bool run = true;
-            double balance = 0;
+            decimal balance = 0;
 
             // Loop until "A" or "a" is pressed.
             while (run)
@@ -47,10 +47,10 @@ namespace Session_3_Paperbook_Chapter_4_Exercise_8_Bank_Simulator
                 {
                     case ConsoleKey.I:
                         {
-                            double deposit;
+                            decimal deposit;
 
                             Console.Write("How much do you wish to deposit? ");
-                            while (!double.TryParse(Console.ReadLine(), out deposit))
+                            while (!decimal.TryParse(Console.ReadLine(), out deposit))
                             {
                                 Console.Write("Try again: ");
                             }
@@ -61,10 +61,10 @@ namespace Session_3_Paperbook_Chapter_4_Exercise_8_Bank_Simulator
                         break;
                     case ConsoleKey.U:
                         {
-                            double withdrawal;
+                            decimal withdrawal;
 
                             Console.Write("How much do you wish to withdraw? ");
-                            while (!double.TryParse(Console.ReadLine(), out withdrawal))
+                            while (!decimal.TryParse(Console.ReadLine(), out withdrawal))
                             {
                                 Console.Write("Try again: ");
                             }
@@ -81,9 +81,11 @@ namespace Session_3_Paperbook_Chapter_4_Exercise_8_Bank_Simulator
                         Console.WriteLine("Goodbye...");
                         break;
                     default:
-                        Console.WriteLine("Strange things are happening...");
+                        Console.WriteLine("Press one of the highlighted letters in the menu below...");
                         break;
                 }
+
+                Console.WriteLine();
             }
         }
     }
