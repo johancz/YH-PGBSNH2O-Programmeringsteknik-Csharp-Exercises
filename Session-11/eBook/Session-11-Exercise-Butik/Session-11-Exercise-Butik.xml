@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Session-11-Exercise-Butik</name>
+    </assembly>
+    <members>
+        <member name="T:Session_11_Exercise_Butik.Store">
+            <summary>
+            class Store
+            </summary>
+        </member>
+        <member name="M:Session_11_Exercise_Butik.Store.CreateProductsOutput">
+            <summary>
+            
+            </summary>
+            <returns>
+            A Tuple&lt;string[], string[]&gt; with a header array; containing the header text and a separator line,
+            and an array of each <![CDATA[<see cref="Product"/>]]>
+            </returns>
+        </member>
+        <member name="T:Session_11_Exercise_Butik.Product">
+            <summary>
+            class Product
+            </summary>
+        </member>
+        <member name="T:Session_11_Exercise_Butik.ShoppingBasket">
+            <summary>
+            class Product
+            </summary>
+        </member>
+        <member name="T:Session_11_Exercise_Butik.Program">
+            <summary>
+            class Program
+            </summary>
+        </member>
+        <member name="T:Session_11_Exercise_Butik.ProgramTests">
+            <summary>
+            class ProgramTests
+            </summary>
+        </member>
+    </members>
+</doc>
