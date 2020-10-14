@@ -6,16 +6,32 @@ using Microsoft.VisualStudio.TestTools.UnitTesting;
 
 namespace Session_13_Exercise_TuplesToObjects
 {
+    public class Person
+    {
+        public string Name;
+        public int Age;
+        public double Height;
+    }
+
     public class Program
     {
         public static void Main()
         {
             CultureInfo.CurrentCulture = CultureInfo.InvariantCulture;
+
+            var person = new Person
+            {
+                Name = "Brad",
+                Age = 56,
+                Height = 1.82
+            };
+            string summary = Program.SummarizePerson(person);
+            Console.WriteLine(summary);
         }
 
-        public static string SummarizePerson((string, int, double) person)
+        public static string SummarizePerson(Person person)
         {
-            return person.Item1 + " is " + person.Item2 + " years old and " + person.Item3 + " meters tall";
+            return person.Name + " is " + person.Age + " years old and " + person.Height + " meters tall";
         }
     }
 
@@ -31,7 +47,12 @@ namespace Session_13_Exercise_TuplesToObjects
         [TestMethod]
         public void ExampleTest()
         {
-            var person = ("Brad", 56, 1.82);
+            var person = new Person
+            {
+                Name = "Brad",
+                Age = 56,
+                Height = 1.82
+            };
             string summary = Program.SummarizePerson(person);
             Assert.AreEqual("Brad is 56 years old and 1.82 meters tall", summary);
         }
