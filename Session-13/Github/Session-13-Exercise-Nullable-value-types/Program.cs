@@ -41,12 +41,18 @@ namespace Session_13_Exercise_Nullable_value_types
             // Solution 2) is the most applicable for the purpose of this exercise.
             int? largest = null;
 
+
             foreach (int n in numbers)
             {
-                if (largest == null || n > largest)
-                {
-                    largest = n;
-                }
+                // method 1:
+                //if (largest == null || n > largest)
+                //{
+                //    largest = n;
+                //}
+                // method 2:
+                //largest = Nullable.Compare(n, largest) > 0 ? n : largest;
+                // method 1:
+                largest = n > largest ? n : largest ?? n;
             }
 
             if (largest == null)
