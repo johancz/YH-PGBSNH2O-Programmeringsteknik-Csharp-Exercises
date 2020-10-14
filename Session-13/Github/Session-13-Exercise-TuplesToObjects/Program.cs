@@ -11,8 +11,6 @@ namespace Session_13_Exercise_TuplesToObjects
         public static void Main()
         {
             CultureInfo.CurrentCulture = CultureInfo.InvariantCulture;
-
-            Console.WriteLine("Hello!");
         }
 
         public static string SummarizePerson((string, int, double) person)
@@ -24,6 +22,12 @@ namespace Session_13_Exercise_TuplesToObjects
     [TestClass]
     public class ProgramTests
     {
+        [TestInitialize]
+        public void TestInit()
+        {
+            CultureInfo.CurrentCulture = CultureInfo.InvariantCulture;
+        }
+
         [TestMethod]
         public void ExampleTest()
         {
