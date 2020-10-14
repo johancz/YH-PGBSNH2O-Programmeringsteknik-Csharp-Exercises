@@ -231,6 +231,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Session-13-Exercise-Kodstil
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Session-13-Exercise-Implicitly-typed-variables-var", "Session-13\Github\Session-13-Exercise-Implicitly-typed-variables-var\Session-13-Exercise-Implicitly-typed-variables-var.csproj", "{9460201D-1B70-4F02-BBE6-D4B5CEBBE92C}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Session-13-Exercise-Optional-arguments", "Session-13\Github\Session-13-Exercise-Optional-arguments\Session-13-Exercise-Optional-arguments.csproj", "{B688D9D8-8D20-4042-906A-D492C3EA4306}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -557,6 +559,10 @@ Global
 		{9460201D-1B70-4F02-BBE6-D4B5CEBBE92C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9460201D-1B70-4F02-BBE6-D4B5CEBBE92C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9460201D-1B70-4F02-BBE6-D4B5CEBBE92C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B688D9D8-8D20-4042-906A-D492C3EA4306}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B688D9D8-8D20-4042-906A-D492C3EA4306}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B688D9D8-8D20-4042-906A-D492C3EA4306}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B688D9D8-8D20-4042-906A-D492C3EA4306}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -665,6 +671,7 @@ Global
 		{72796582-F970-4784-845D-4CC0541DE8EC} = {E7CCFBFD-D124-4480-A06C-6B6719835794}
 		{6DD3AC42-91A7-47F4-B606-567DA79D14AD} = {72796582-F970-4784-845D-4CC0541DE8EC}
 		{9460201D-1B70-4F02-BBE6-D4B5CEBBE92C} = {72796582-F970-4784-845D-4CC0541DE8EC}
+		{B688D9D8-8D20-4042-906A-D492C3EA4306} = {72796582-F970-4784-845D-4CC0541DE8EC}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {7E24C14F-6B05-446D-AC6A-CD36EDE2D939}
