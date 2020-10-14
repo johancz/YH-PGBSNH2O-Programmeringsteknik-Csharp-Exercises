@@ -43,11 +43,6 @@ namespace Session_13_Exercise_Enums
                 LastName = "Pitt",
                 AgeCategory = AgeCategory.Adult,
             };
-            var d = typeof(decimal).IsPrimitive;
-            var f = typeof(float).IsPrimitive;
-            var i = typeof(int).IsPrimitive;
-            var s = typeof(string).IsPrimitive;
-            var c = typeof(char).IsPrimitive;
 
             // 2. Fördelarna med enum är att du inte kan skriva fel i if-satsens uttryck.
             // "AgeCategory.Senior" finns men "AgeCategory.Senor" finns inte. Kompilatorn/VShade klagat på att
