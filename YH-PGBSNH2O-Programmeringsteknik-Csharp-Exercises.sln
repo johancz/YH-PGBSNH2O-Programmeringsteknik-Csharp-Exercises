@@ -233,9 +233,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Session-13-Exercise-Implici
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Session-13-Exercise-Optional-arguments", "Session-13\Github\Session-13-Exercise-Optional-arguments\Session-13-Exercise-Optional-arguments.csproj", "{B688D9D8-8D20-4042-906A-D492C3EA4306}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Session-13-Exercise-Nullable-value-types", "Session-13\Github\Session-13-Exercise-Nullable-value-types\Session-13-Exercise-Nullable-value-types.csproj", "{00788A56-1732-42D7-AEE1-631732D49892}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Session-13-Exercise-Nullable-value-types", "Session-13\Github\Session-13-Exercise-Nullable-value-types\Session-13-Exercise-Nullable-value-types.csproj", "{00788A56-1732-42D7-AEE1-631732D49892}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Session-13-Exercise-Enums", "Session-13\Github\Session-13-Exercise-Enums\Session-13-Exercise-Enums.csproj", "{1CA1C63C-93AA-44E1-A483-00C7B283A256}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Session-13-Exercise-Enums", "Session-13\Github\Session-13-Exercise-Enums\Session-13-Exercise-Enums.csproj", "{1CA1C63C-93AA-44E1-A483-00C7B283A256}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Session-13-Exercise-Conditional-operator", "Session-13\Github\Session-13-Exercise-Conditional-operator\Session-13-Exercise-Conditional-operator.csproj", "{75080DE6-161B-4D30-A3DA-E6E952708B7D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -575,6 +577,10 @@ Global
 		{1CA1C63C-93AA-44E1-A483-00C7B283A256}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1CA1C63C-93AA-44E1-A483-00C7B283A256}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1CA1C63C-93AA-44E1-A483-00C7B283A256}.Release|Any CPU.Build.0 = Release|Any CPU
+		{75080DE6-161B-4D30-A3DA-E6E952708B7D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{75080DE6-161B-4D30-A3DA-E6E952708B7D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{75080DE6-161B-4D30-A3DA-E6E952708B7D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{75080DE6-161B-4D30-A3DA-E6E952708B7D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -686,6 +692,7 @@ Global
 		{B688D9D8-8D20-4042-906A-D492C3EA4306} = {72796582-F970-4784-845D-4CC0541DE8EC}
 		{00788A56-1732-42D7-AEE1-631732D49892} = {72796582-F970-4784-845D-4CC0541DE8EC}
 		{1CA1C63C-93AA-44E1-A483-00C7B283A256} = {72796582-F970-4784-845D-4CC0541DE8EC}
+		{75080DE6-161B-4D30-A3DA-E6E952708B7D} = {72796582-F970-4784-845D-4CC0541DE8EC}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {7E24C14F-6B05-446D-AC6A-CD36EDE2D939}
