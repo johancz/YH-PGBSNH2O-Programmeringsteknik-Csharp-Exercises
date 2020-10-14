@@ -6,25 +6,19 @@ using Microsoft.VisualStudio.TestTools.UnitTesting;
 
 namespace Session_13_Exercise_ObjectsToTuples
 {
-    public class Point
-    {
-        public double X;
-        public double Y;
-    }
-
     public class Program
     {
         public static void Main()
         {
             CultureInfo.CurrentCulture = CultureInfo.InvariantCulture;
 
-            Console.WriteLine("Hello!");
+
         }
 
-        public static double DistanceBetween(Point p1, Point p2)
+        public static double DistanceBetween((double x, double y) p1, (double x, double y) p2)
         {
-            double xDistance = p2.X - p1.X;
-            double yDistance = p2.Y - p1.Y;
+            double xDistance = p2.x - p1.x;
+            double yDistance = p2.y - p1.y;
             double distance = Math.Sqrt(Math.Pow(xDistance, 2) + Math.Pow(yDistance, 2));
             return distance;
         }
@@ -36,17 +30,7 @@ namespace Session_13_Exercise_ObjectsToTuples
         [TestMethod]
         public void ExampleTest()
         {
-            Point p1 = new Point
-            {
-                X = 0,
-                Y = 0
-            };
-            Point p2 = new Point
-            {
-                X = 3,
-                Y = 4
-            };
-            double distance = Program.DistanceBetween(p1, p2);
+            double distance = Program.DistanceBetween((0, 0), (3, 4));
             Assert.AreEqual(5, distance, 0.1);
         }
     }
