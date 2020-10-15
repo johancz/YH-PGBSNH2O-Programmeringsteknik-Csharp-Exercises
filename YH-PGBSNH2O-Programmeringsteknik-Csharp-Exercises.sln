@@ -237,11 +237,15 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Session-13-Exercise-Nullabl
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Session-13-Exercise-Enums", "Session-13\Github\Session-13-Exercise-Enums\Session-13-Exercise-Enums.csproj", "{1CA1C63C-93AA-44E1-A483-00C7B283A256}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Session-13-Exercise-Conditional-operator", "Session-13\Github\Session-13-Exercise-Conditional-operator\Session-13-Exercise-Conditional-operator.csproj", "{75080DE6-161B-4D30-A3DA-E6E952708B7D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Session-13-Exercise-Conditional-operator", "Session-13\Github\Session-13-Exercise-Conditional-operator\Session-13-Exercise-Conditional-operator.csproj", "{75080DE6-161B-4D30-A3DA-E6E952708B7D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Session-13-Exercise-ObjectsToTuples", "Session-13\Github\Session-13-Exercise-ObjectsToTuples\Session-13-Exercise-ObjectsToTuples.csproj", "{309CE190-A566-4CB1-85BD-34B0167ABC71}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Session-13-Exercise-ObjectsToTuples", "Session-13\Github\Session-13-Exercise-ObjectsToTuples\Session-13-Exercise-ObjectsToTuples.csproj", "{309CE190-A566-4CB1-85BD-34B0167ABC71}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Session-13-Exercise-TuplesToObjects", "Session-13\Github\Session-13-Exercise-TuplesToObjects\Session-13-Exercise-TuplesToObjects.csproj", "{40AF927B-C1D0-415F-AD1D-0D035D6F7F61}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Session-13-Exercise-TuplesToObjects", "Session-13\Github\Session-13-Exercise-TuplesToObjects\Session-13-Exercise-TuplesToObjects.csproj", "{40AF927B-C1D0-415F-AD1D-0D035D6F7F61}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Session-14", "Session-14", "{D0C9158C-04A3-4138-87B4-C5D33C6B33EB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Session-14-Exercise-Felhantering-2", "Session-14\GitHub\Session-14-Exercise-Felhantering-2\Session-14-Exercise-Felhantering-2.csproj", "{697B23CB-3003-459D-BB2D-364EBA263A02}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -593,6 +597,10 @@ Global
 		{40AF927B-C1D0-415F-AD1D-0D035D6F7F61}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{40AF927B-C1D0-415F-AD1D-0D035D6F7F61}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{40AF927B-C1D0-415F-AD1D-0D035D6F7F61}.Release|Any CPU.Build.0 = Release|Any CPU
+		{697B23CB-3003-459D-BB2D-364EBA263A02}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{697B23CB-3003-459D-BB2D-364EBA263A02}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{697B23CB-3003-459D-BB2D-364EBA263A02}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{697B23CB-3003-459D-BB2D-364EBA263A02}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -707,6 +715,7 @@ Global
 		{75080DE6-161B-4D30-A3DA-E6E952708B7D} = {72796582-F970-4784-845D-4CC0541DE8EC}
 		{309CE190-A566-4CB1-85BD-34B0167ABC71} = {72796582-F970-4784-845D-4CC0541DE8EC}
 		{40AF927B-C1D0-415F-AD1D-0D035D6F7F61} = {72796582-F970-4784-845D-4CC0541DE8EC}
+		{697B23CB-3003-459D-BB2D-364EBA263A02} = {D0C9158C-04A3-4138-87B4-C5D33C6B33EB}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {7E24C14F-6B05-446D-AC6A-CD36EDE2D939}
